@@ -15,7 +15,7 @@ import store from './store';
 export default class App extends Component {
   static trackIntro() {
     track(data.meta.name, 'intro', 'Finn ut om du kan erklære ansvar!');
-  };
+  }
 
   static propTypes = {
     translations: PropTypes.object,

@@ -1546,8 +1546,8 @@
                                 {
                                   "id": "insufficientCompentency",
                                   "type": "Text",
-                                  "heading":
-                                    "Firmaet ditt kan ikke erklære ansvar, men kan søke kommunen om ansvarsrett"
+                                  "text":
+                                    "<strong>Firmaet ditt kan ikke erklære ansvar, men kan søke kommunen om ansvarsrett</strong>"
                                 },
                                 {
                                   "id": "failedButCanGoOn",

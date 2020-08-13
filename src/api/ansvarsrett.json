@@ -559,7 +559,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "and",
                     "clauses": [
                       {
@@ -578,7 +578,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -608,7 +608,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "and",
                     "clauses": [
                       {
@@ -627,7 +627,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -657,7 +657,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -696,7 +696,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -730,7 +730,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -799,7 +799,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -827,7 +827,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -921,7 +921,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -949,7 +949,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -1043,7 +1043,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -1071,7 +1071,7 @@
               "messages": [
                 {
                   "message": "Faglig ledelse har riktig kompetanse",
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {
@@ -1140,7 +1140,7 @@
                 {
                   "message": "Faglig ledelse har ikke riktig kompetanse",
                   "warning": true,
-                  "test": {
+                  "show": {
                     "type": "or",
                     "clauses": [
                       {

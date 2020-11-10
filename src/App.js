@@ -12,18 +12,18 @@ import dataExport from './exports/data-export';
 import Intro from './pages/Intro';
 import store from './store';
 
+const propTypes = {
+  translations: PropTypes.object,
+};
+
+const defaultProps = {
+  translations: {},
+};
+
 export default class App extends Component {
   static trackIntro() {
     track(data.meta.name, 'intro', 'Finn ut om du kan erklære ansvar!');
   }
-
-  static propTypes = {
-    translations: PropTypes.object,
-  };
-
-  static defaultProps = {
-    translations: {},
-  };
 
   constructor(props) {
     super(props);
@@ -47,7 +47,9 @@ export default class App extends Component {
   }
 
   render() {
-    if (this.state.intro) {
+    const { intro } = this.state;
+    const { translations } = this.props;
+    if (intro) {
       App.trackIntro();
       return (
         <Provider store={store}>
@@ -63,10 +65,13 @@ export default class App extends Component {
         <Wizard
           wizard={data}
           exports={{ dataExport }}
-          translations={this.props.translations}
+          translations={translations}
           showIntro={this.showIntro}
         />
       </Provider>
     );
   }
 }
+
+App.propTypes = propTypes;
+App.defaultProps = defaultProps;

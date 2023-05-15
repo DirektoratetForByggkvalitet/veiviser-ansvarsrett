@@ -85,31 +85,36 @@
                       "id": "foreigncompany.country",
                       "property": "foreigncompany.country",
                       "type": "Input",
-                      "heading": "Land"
+                      "heading": "Land",
+                      "autocomplete": "country-name"
                     },
                     {
                       "id": "foreigncompany.name",
                       "property": "foreigncompany.name",
                       "type": "Input",
-                      "heading": "Firmaets navn"
+                      "heading": "Firmaets navn",
+                      "autocomplete": "organization"
                     },
                     {
                       "id": "foreigncompany.adresse",
                       "property": "contactperson.adresse",
                       "type": "Input",
-                      "heading": "Adresse"
+                      "heading": "Adresse",
+                      "autocomplete": "street-address"
                     },
                     {
                       "id": "foreigncompany.postnummer",
                       "property": "contactperson.postnummer",
                       "type": "Input",
-                      "heading": "Postnummer"
+                      "heading": "Postnummer",
+                      "autocomplete": "postal-code"
                     },
                     {
                       "id": "foreigncompany.poststed",
                       "property": "contactperson.poststed",
                       "type": "Input",
-                      "heading": "Poststed"
+                      "heading": "Poststed",
+                      "autocomplete": "address-level2"
                     }
                   ]
                 }
@@ -128,7 +133,8 @@
               "id": "contactperson.name",
               "property": "contactperson.name",
               "type": "Input",
-              "heading": "Navn"
+              "heading": "Navn",
+              "autocomplete": "name"
             },
             {
               "id": "contactperson.email",
@@ -138,13 +144,15 @@
                 "pattern": "\\S+@\\S+\\.\\S+",
                 "error": "Må være en epost"
               },
-              "heading": "Epost"
+              "heading": "Epost",
+              "autocomplete": "email"
             },
             {
               "id": "contactperson.phone",
               "property": "contactperson.phone",
               "type": "Input",
-              "heading": "Telefon"
+              "heading": "Telefon",
+              "autocomplete": "tel"
             }
           ]
         }
@@ -225,7 +233,9 @@
               "text":
                 "<p>Arbeidserfaringen må være opparbeidet etter endt relevant utdanning. I tiltaksklasse 1 eller 2 oppgir du arbeidserfaring fra siste 10 år, for tiltaksklasse 3 oppgir du fra siste 15 år.</p><p><a href=\"https://dibk.no/byggeregler/sak/3/11/11-4/ \">Les mer om krav til praksis</a> i byggesaksforskriften.</p>",
               "heading": "Velg antall år med relevant arbeidserfaring til faglig ledelse",
-              "minimum": 0
+              "minimum": 0,
+              "placeholder": "0",
+              "unit": "år"
             },
             {
               "id": "possibleRoles",
@@ -1676,7 +1686,8 @@
                   "property": "responsiblefirm",
                   "type": "Input",
                   "heading": "Hvilket firma er ansvarlig søker?",
-                  "text": "<p>Skriv inn  navnet på firmaet.</p>"
+                  "text": "<p>Skriv inn  navnet på firmaet.</p>",
+                  "autocomplete": "organization"
                 }
               ]
             }
@@ -1829,7 +1840,8 @@
               "id": "where.municipality",
               "property": "where.municipality",
               "type": "Input",
-              "heading": "Navn på kommune"
+              "heading": "Navn på kommune",
+              "autocomplete": "address-level2"
             },
             {
               "id": "where.section",
@@ -1858,6 +1870,7 @@
               "property": "where.address",
               "type": "Input",
               "heading": "Gateadresse",
+              "autocomplete": "street-address",
               "optional": true
             }
           ]

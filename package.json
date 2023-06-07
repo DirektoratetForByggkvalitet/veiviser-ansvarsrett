@@ -2,6 +2,7 @@
   "name": "dibk-ny-ansvar",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "lodash.get": "^4.4.2",
     "losen": "^6.0.0",

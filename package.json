@@ -16,9 +16,9 @@
     "styled-components": "^2.1.2"
   },
   "scripts": {
-    "start": "PORT=8080 react-scripts start",
+    "start": "PORT=8080 react-scripts --openssl-legacy-provider start",
     "dev": "npm start",
-    "build": "react-scripts build",
+    "build": "react-scripts --openssl-legacy-provider build",
     "test": "npm run lint:js && react-scripts test --env=jsdom",
     "lint:js": "eslint . --ext .jsx,.js --ignore-pattern build",
     "eject": "react-scripts eject",

@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Provider } from "react-redux";
-import { Wizard, StyleProvider, trackEvent, track } from "losen";
+import { Provider, connect } from "react-redux";
+import { Wizard, StyleProvider, trackEvent, track, state } from "losen";
 import data from "./api/ansvarsrett";
 import dataExport from "./exports/data-export";
+import { PersistGate } from "redux-persist/integration/react";
+
 import Intro from "./pages/Intro";
-import { store } from "./store";
+import { store, persistor } from "./store";
 
 const propTypes = {
   translations: PropTypes.object,
@@ -43,7 +45,7 @@ const App = ({ translations }: any) => {
     return (
       <Provider store={store}>
         <StyleProvider>
-          <Intro close={closeIntro} data={data} />
+          <Intro close={closeIntro} />
         </StyleProvider>
       </Provider>
     );
@@ -51,17 +53,19 @@ const App = ({ translations }: any) => {
 
   return (
     <Provider store={store}>
-      <Wizard
-        wizard={data}
-        exports={{ dataExport }}
-        translations={translations}
-        showIntro={showIntro}
-      />
+      <PersistGate loading={null} persistor={persistor}>
+        <Wizard
+          wizard={data}
+          exports={{ dataExport }}
+          translations={translations}
+          showIntro={showIntro}
+        />
+      </PersistGate>
     </Provider>
   );
 };
+const mapStateToProps = ({ [state.NAME]: { $computed, ...wizardData } }) => ({
+  hasData: !!Object.keys(wizardData).length,
+});
 
-App.propTypes = propTypes;
-App.defaultProps = defaultProps;
-
-export default App;
+export default connect(mapStateToProps)(App);

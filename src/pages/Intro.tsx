@@ -8,12 +8,7 @@ import { IntroMain } from "../primitives/IntroMain";
   "@WIZARD_STATE": any; // Replace 'any' with the actual type of '@WIZARD_STATE'
 } */
 
-function Intro({ close, data }) {
-  useEffect(() => {
-    if (Object.keys(data).length !== 0) {
-      close();
-    }
-  }, [data, close]);
+function Intro({ close }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
@@ -71,11 +66,4 @@ function Intro({ close, data }) {
   );
 }
 
-Intro.propTypes = {
-  close: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired,
-};
-
-export default connect((state) => ({
-  data: state["@WIZARD_STATE"],
-}))(Intro);
+export default Intro;

@@ -1,6 +1,8 @@
 import { createRoot } from "react-dom/client";
 import ReactDOM from "react-dom";
 import App from "./App";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 const container = document.querySelector("div[data-bind], #root");
 if (!container) {
@@ -23,4 +25,8 @@ translations = Object.keys(translations).reduce((res, id) => {
   };
 }, {});
 
-root.render(<App translations={translations} />); /* eslint no-undef: 0 */
+root.render(
+  <Provider store={store}>
+    <App translations={translations} />
+  </Provider>
+); /* eslint no-undef: 0 */

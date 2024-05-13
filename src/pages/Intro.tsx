@@ -31,7 +31,7 @@ function Intro({ close }) {
         </Primitives.Paragraphs.P>
         <section>
           <div>
-            <Primitives.Heading.H2 $small>
+            <Primitives.Heading.H2>
               Før du begynner må du vite:
             </Primitives.Heading.H2>
             <ol>
@@ -50,7 +50,7 @@ function Intro({ close }) {
             </figure>
           </div>
         </section>
-        <Primitives.Heading.H2 $small>
+        <Primitives.Heading.H2>
           Start nå og fullfør senere
         </Primitives.Heading.H2>
         <Primitives.Paragraphs.P>

@@ -2242,20 +2242,19 @@ const data: WizardDefinition = {
                             complete: "Firmaet ditt kan søke om ansvarsrett",
                             incomplete: "Du har ikke svart på alle spørsmålene",
                             incompleteWithError:
-                              "Du har ikke svart på alle spørsmålene",
-                            completeWithError:
-                              "Du har ikke svart på alle spørsmålene",
+                              "Du har ikke svart på alle spørsmålene og har feil i svarene dine",
+                            completeWithError: "Du har feil i svarene dine",
                           },
                           lead: {
                             complete:
                               "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.</p><p><strong>Se over og skriv ut søknaden</strong><br />Les nøye gjennom søknaden før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene. I oppsummeringen under kan du klikke deg inn på hvert steg i veiviseren for å legge til og endre svarene dine. Når du har forsikret deg om at alt stemmer, kan du skrive ut søknaden nederst på siden.</p>",
 
                             incomplete:
-                              "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.<p></p>Gjennomfør resten av stegene i veiviseren og sørg for at du har fylt ut riktig informasjon. Du vil da kunne skrive ut en ferdig utfylt søknad nederst på denne siden.</p>",
+                              "<p>Vi kan derfor ikke gi deg et resultat ennå. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>.",
                             incompleteWithError:
-                              "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.<p></p>Gjennomfør resten av stegene i veiviseren og sørg for at du har fylt ut riktig informasjon. Du vil da kunne skrive ut en ferdig utfylt søknad nederst på denne siden.</p>",
+                              "<p>Vi kan derfor ikke gi deg et resultat ennå. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>.",
                             completeWithError:
-                              "<p>Firmaet ditt har ikke tilstrekkelig kompetanse til å kunne erklære ansvar for arbeidet som skal gjøres, men dere kan søke kommunen om ansvarsrett.<p></p>Gjennomfør resten av stegene i veiviseren og sørg for at du har fylt ut riktig informasjon. Du vil da kunne skrive ut en ferdig utfylt søknad nederst på denne siden.</p>",
+                              "<p>'Du har svart feil på noen spørsmål. Du kan se hvilke spørsmål du har svart feil på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.'</p>",
                           },
                           children: [
                             {
@@ -2409,18 +2408,19 @@ const data: WizardDefinition = {
       heading: {
         complete: "Firmaet ditt kan erklære ansvar",
         incomplete: "Du har ikke svart på alle spørsmålene",
-        incompleteWithError: "Du har ikke svart på alle spørsmålene",
-        completeWithError: "Du har ikke svart på alle spørsmålene",
+        incompleteWithError:
+          "Du har ikke svart på alle spørsmålene og har feil i svarene dine",
+        completeWithError: "Du har feil i svarene dine",
       },
       lead: {
         complete:
           "<p><strong>Se over og skriv ut</strong><br />Les nøye gjennom erklæringen før du fortsetter, og sjekk at du har svart riktig på alle spørsmålene. I oppsummeringen under kan du klikke deg inn på hvert steg i veiviseren for å legge til og endre svarene dine. Når du har forsikret deg om at alt stemmer, kan du skrive ut erklæringen nederst på siden.</p>",
         incomplete:
-          "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
+          "<p>Vi kan derfor ikke gi deg et resultat ennå. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>.",
         incompleteWithError:
-          "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
+          "<p>Vi kan derfor ikke gi deg et resultat ennå. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.</p>.",
         completeWithError:
-          "Vi kan derfor ikke gi deg svar på om firmaet ditt kan erklære ansvar. Du kan se hvilke spørsmål du ikke har svart på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.",
+          "'Du har svart feil på noen spørsmål. Du kan se hvilke spørsmål du har svart feil på i oppsummeringen under. Der kan du også klikke deg inn på hvert steg i veiviseren for å legge til og endre dine svar.'",
       },
 
       exporter: "dataExport",

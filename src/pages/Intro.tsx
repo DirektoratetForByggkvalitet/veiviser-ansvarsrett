@@ -1,13 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { Primitives } from 'losen';
-import { IntroMain } from '../primitives/IntroMain';
+import React, { useEffect } from "react";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { Primitives } from "losen";
+import { IntroMain } from "../primitives/IntroMain";
 
-function Intro({ close, data }) {
-  if (Object.keys(data).length !== 0) {
-    close();
-  }
+/* interface RootState {
+  "@WIZARD_STATE": any; // Replace 'any' with the actual type of '@WIZARD_STATE'
+} */
+
+function Intro({ close }) {
   return (
     <Primitives.Wizard>
       <IntroMain>
@@ -30,7 +31,7 @@ function Intro({ close, data }) {
         </Primitives.Paragraphs.P>
         <section>
           <div>
-            <Primitives.Heading.H2 small>
+            <Primitives.Heading.H2>
               Før du begynner må du vite:
             </Primitives.Heading.H2>
             <ol>
@@ -44,12 +45,12 @@ function Intro({ close, data }) {
             </ol>
           </div>
           <div>
-            <Primitives.Figure>
+            <figure>
               <img src="/images/intro.svg" alt="" />
-            </Primitives.Figure>
+            </figure>
           </div>
         </section>
-        <Primitives.Heading.H2 small>
+        <Primitives.Heading.H2>
           Start nå og fullfør senere
         </Primitives.Heading.H2>
         <Primitives.Paragraphs.P>
@@ -65,9 +66,4 @@ function Intro({ close, data }) {
   );
 }
 
-Intro.propTypes = {
-  close: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired,
-};
-
-export default connect((state) => ({ data: state['@WIZARD_STATE'] }))(Intro);
+export default Intro;

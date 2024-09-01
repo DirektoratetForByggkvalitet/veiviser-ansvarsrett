@@ -51,7 +51,7 @@ const data: WizardDefinition = {
                   heading: "Organisasjonsnummer",
                   text: "<p>Eksempel: 123 456 789 eller 123456789</p>",
                   placeholder: "987 654 321",
-                  source: "//data.brreg.no/enhetsregisteret/api/enheter/",
+                  source: "https://data.brreg.no/enhetsregisteret/api/enheter/",
                   information:
                     'Er firmaets navn eller adresse feil? Da må du endre denne informasjonen via skjemaet <a href="https://www.altinn.no/no/Starte-og-drive-bedrift/Drive/Andre-driftsoppgaver/Flytting-og-omorganisering/Hvordan-meldes-flytting-og-andre-endringer/">Samordnet registermelding</a> i Altinn før du fortsetter.',
                   fetchSG: true,
